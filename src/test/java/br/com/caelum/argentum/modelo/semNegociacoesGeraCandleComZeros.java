@@ -21,8 +21,8 @@ public class semNegociacoesGeraCandleComZeros {
 		CandlestickFactory fabrica = new CandlestickFactory();
 		Candlestick candle = fabrica.constroiCandleParaData(hoje, negociacoes);
 		
-		Assert.assertEquals(0, candle.getMaximo(), 0.00001);
-		Assert.assertEquals(0, candle.getMinimo(), 0.00001);
+		Assert.assertEquals(null, candle.getMaximo());
+		Assert.assertEquals(null, candle.getMinimo());
 		Assert.assertEquals(0, candle.getFechamento(), 0.00001);
 		Assert.assertEquals(0, candle.getAbertura(), 0.00001);
 		Assert.assertEquals(0.0, candle.getVolume(), 0.00001);

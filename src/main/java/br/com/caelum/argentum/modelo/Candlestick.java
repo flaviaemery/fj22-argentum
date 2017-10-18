@@ -4,14 +4,14 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public final class Candlestick {
-	private final double abertura;
-	private final double fechamento;
-	private final double minimo;
-	private final double maximo;
-	private final double volume;
+	private final Double abertura;
+	private final Double fechamento;
+	private final Double minimo;
+	private final Double maximo;
+	private final Double volume;
 	private final Calendar data;
 	
-	public Candlestick(double abertura, double fechamento, double minimo, double maximo, double volume, Calendar data) {
+	public Candlestick(Double abertura, Double fechamento, Double minimo, Double maximo, Double volume, Calendar data) {
 		this.abertura = abertura;
 		this.fechamento = fechamento;
 		this.minimo = minimo;
@@ -19,19 +19,19 @@ public final class Candlestick {
 		this.volume = volume;
 		this.data = data;
 	}
-	public double getAbertura() {
+	public Double getAbertura() {
 		return abertura;
 	}
-	public double getFechamento() {
+	public Double getFechamento() {
 		return fechamento;
 	}
-	public double getMinimo() {
+	public Double getMinimo() {
 		return minimo;
 	}
-	public double getMaximo() {
+	public Double getMaximo() {
 		return maximo;
 	}
-	public double getVolume() {
+	public Double getVolume() {
 		return volume;
 	}
 	public Calendar getData() {
@@ -46,7 +46,7 @@ public final class Candlestick {
 	}
 	
 	public boolean isAlta( ) {
-		return this.abertura < this.fechamento;
+		return this.abertura <= this.fechamento;
 	}
 	
 	public boolean isBaixa() {

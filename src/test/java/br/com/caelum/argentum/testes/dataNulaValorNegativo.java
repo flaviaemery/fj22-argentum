@@ -12,6 +12,6 @@ public class dataNulaValorNegativo {
 
 	@Test
 	public void test() {
-		Candlestick c = new Candlestick(10, 20, -10, 20, 10000, null);
+		Candlestick c = new Candlestick(10.0, 20.0, -10.0, 20.0, 10000.0, null);
 	}
 }

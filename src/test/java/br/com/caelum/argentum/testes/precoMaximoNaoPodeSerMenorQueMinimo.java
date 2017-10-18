@@ -12,7 +12,7 @@ public class precoMaximoNaoPodeSerMenorQueMinimo {
 
 	@Test
 	public void test() {
-		Candlestick c = new Candlestick(10, 20, 20, 10, 10000, Calendar.getInstance());
+		Candlestick c = new Candlestick(10.0, 20.0, 20.0, 10.0, 10000.0, Calendar.getInstance());
 	}
 
 }

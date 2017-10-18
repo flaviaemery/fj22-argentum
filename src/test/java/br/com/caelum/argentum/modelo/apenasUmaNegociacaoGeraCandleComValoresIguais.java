@@ -25,8 +25,8 @@ public class apenasUmaNegociacaoGeraCandleComValoresIguais {
 		
 		Assert.assertEquals(40.5, candle.getAbertura(), 0.00001);
 		Assert.assertEquals(40.5, candle.getFechamento(), 0.00001);
-		Assert.assertEquals(40.5, candle.getMinimo(), 0.00001);
 		Assert.assertEquals(40.5, candle.getMaximo(), 0.00001);
+		Assert.assertEquals(40.5, candle.getMinimo(), 0.00001);
 		Assert.assertEquals(4050.0, candle.getVolume(), 0.00001);
 	}
 
