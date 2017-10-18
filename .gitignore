@@ -32,6 +32,9 @@ local.properties
 # sbteclipse plugin
 .target
 
+# pasta de compilação do maven
+target
+
 # Tern plugin
 .tern-project
 
